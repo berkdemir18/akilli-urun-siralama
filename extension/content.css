@@ -26,6 +26,10 @@
 #aus-root button, #aus-root input { font: inherit; color: inherit; margin: 0; }
 #aus-root svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2.2; stroke-linecap: round; }
 #aus-root p, #aus-root h2, #aus-root ol, #aus-root ul { margin: 0; padding: 0; }
+#aus-root svg.aus-mark { fill: currentColor; stroke: none; }
+#aus-root svg.aus-mark path { stroke: currentColor; stroke-width: 3; stroke-linejoin: round; }
+#aus-root .aus-logo svg.aus-mark { width: 27px; height: 27px; }
+#aus-root .aus-mini svg.aus-mark { width: 31px; height: 31px; }
 #aus-root [hidden] { display: none !important; }
 /* Site CSS'inin (header, button, li...) panele sızmasını kes; sınıf kuralları bunu ezer. */
 #aus-root header, #aus-root section, #aus-root div, #aus-root ol, #aus-root ul, #aus-root li,

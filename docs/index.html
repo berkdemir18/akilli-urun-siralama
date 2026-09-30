@@ -8,7 +8,7 @@
   <meta property="og:title" content="Akıllı Ürün Sıralama">
   <meta property="og:description" content="Yıldıza değil, kanıta göre sırala. Hepsiburada, Trendyol ve Amazon TR için Chrome eklentisi.">
   <meta property="og:image" content="img/amazon.webp">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%23ff7a1a'/%3E%3Cpath d='M8 10h16M8 16h10M8 22h5' stroke='%231b1106' stroke-width='3' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="icon" href="img/icon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,650&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
@@ -42,8 +42,7 @@
     .nav { position: sticky; top: 0; z-index: 10; background: rgba(20, 18, 16, .88); border-bottom: 1px solid var(--line); backdrop-filter: blur(10px); }
     .nav .wrap { display: flex; align-items: center; justify-content: space-between; height: 60px; gap: 16px; }
     .brand { display: flex; align-items: center; gap: 10px; font-weight: 700; text-decoration: none; letter-spacing: -.2px; }
-    .logo { display: grid; place-items: center; width: 30px; height: 30px; background: var(--accent); border-radius: 9px; }
-    .logo svg { width: 17px; height: 17px; stroke: var(--accent-ink); stroke-width: 2.6; stroke-linecap: round; fill: none; }
+    .logo { width: 32px; height: 32px; }
     .nav-links { display: flex; align-items: center; gap: 22px; font-size: 14px; color: var(--soft); }
     .nav-links a { text-decoration: none; }
     .nav-links a:hover { color: var(--text); }
@@ -166,7 +165,7 @@
 <body>
   <nav class="nav">
     <div class="wrap">
-      <a class="brand" href="#"><span class="logo"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h5"/></svg></span>Akıllı Ürün Sıralama</a>
+      <a class="brand" href="#"><img class="logo" src="img/icon.svg" width="32" height="32" alt="">Akıllı Ürün Sıralama</a>
       <div class="nav-links">
         <a href="#nasil">Nasıl çalışır</a>
         <a href="#ozellikler">Özellikler</a>
@@ -178,7 +177,7 @@
 
   <header class="hero">
     <div class="wrap">
-      <p class="eyebrow"><b>v3.0.0</b> Hepsiburada · Trendyol · Amazon TR</p>
+      <p class="eyebrow"><b>v3.0.1</b> Hepsiburada · Trendyol · Amazon TR</p>
       <h1>Yıldıza değil, <em>kanıta</em> göre sırala.</h1>
       <p class="lede">Tek yorumlu 5 yıldız, iki bin yorumlu 4,7'nin önüne geçmesin. Akıllı Ürün Sıralama; puanı, yorum sayısını, fiyatı, satışı ve kargoyu birlikte tartar, listeyi yeniden dizer ve her ürünün neden o sırada olduğunu gösterir.</p>
       <div class="cta">
@@ -334,7 +333,7 @@
       <h2>Bir dahaki alışverişte ilk bakacağın yer.</h2>
       <p class="sub">Açık kaynak, ücretsiz, reklamsız.</p>
       <div class="cta">
-        <a class="btn btn-primary" href="https://github.com/berkdemir18/akilli-urun-siralama/releases/latest/download/akilli-urun-siralama.zip"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>v3.0.0'ı indir</a>
+        <a class="btn btn-primary" href="https://github.com/berkdemir18/akilli-urun-siralama/releases/latest/download/akilli-urun-siralama.zip"><svg viewBox="0 0 24 24"><path d="M12 4v11M7 10l5 5 5-5M5 20h14"/></svg>v3.0.1'i indir</a>
         <a class="btn btn-ghost" href="https://github.com/berkdemir18/akilli-urun-siralama/releases">Sürüm notları</a>
       </div>
     </div>

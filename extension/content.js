@@ -900,13 +900,13 @@
 
     root.innerHTML = `
       <button class="aus-mini" id="aus-mini" type="button" aria-label="Akıllı Ürün Sıralama panelini aç">
-        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h10M4 18h5" /></svg>
+        <svg class="aus-mark" viewBox="18 14 92 96" aria-hidden="true"><path d="M64.0 19.0L69.3 32.7L84.0 33.5L72.6 42.8L76.3 57.0L64.0 49.0L51.7 57.0L55.4 42.8L44.0 33.5L58.7 32.7Z"/><rect x="24" y="80" width="24" height="26" rx="5" opacity=".62"/><rect x="52" y="68" width="24" height="38" rx="5"/><rect x="80" y="88" width="24" height="18" rx="5" opacity=".38"/></svg>
         <span class="aus-mini-dot" hidden></span>
       </button>
       <section class="aus-panel" role="dialog" aria-label="Akıllı Ürün Sıralama">
         <header class="aus-head">
           <div class="aus-brand">
-            <span class="aus-logo" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h10M4 18h5" /></svg></span>
+            <span class="aus-logo" aria-hidden="true"><svg class="aus-mark" viewBox="18 14 92 96" aria-hidden="true"><path d="M64.0 19.0L69.3 32.7L84.0 33.5L72.6 42.8L76.3 57.0L64.0 49.0L51.7 57.0L55.4 42.8L44.0 33.5L58.7 32.7Z"/><rect x="24" y="80" width="24" height="26" rx="5" opacity=".62"/><rect x="52" y="68" width="24" height="38" rx="5"/><rect x="80" y="88" width="24" height="18" rx="5" opacity=".38"/></svg></span>
             <div><h2>Akıllı Sıralama</h2><p>${SITE_LABEL}<span class="aus-live"> · uygulandı</span></p></div>
           </div>
           <button id="aus-collapse" class="aus-icon" type="button" aria-label="Paneli küçült" title="Küçült (Alt+Shift+S)">
