@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Akıllı Ürün Sıralama",
+  "version": "3.0.0",
+  "description": "Hepsiburada, Trendyol ve Amazon Türkiye'de ürünleri puan güveni, fiyat, satış ve kargoya göre sıralar; her sıranın nedenini gösterir.",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.hepsiburada.com/*",
+    "https://*.trendyol.com/*",
+    "https://*.amazon.com.tr/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Akıllı Ürün Sıralama (Alt+Shift+S)"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://*.hepsiburada.com/*",
+        "https://*.trendyol.com/*",
+        "https://*.amazon.com.tr/*"
+      ],
+      "js": [
+        "score.js",
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Shift+S"
+      },
+      "description": "Paneli aç/kapat"
+    }
+  }
+}
